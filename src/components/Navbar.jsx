@@ -5,7 +5,7 @@ const inicio = () => {
         <>
             <div className="navbar bg-base-100 shadow-sm">
                 <div className="flex-1">
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <img src="https://profWilliamArte.github.io/reactpaisescompext/assets/logo4-BSAxrvBB.jpg" className="w-200 h-50 p-5" />
                 </div>
                 <div className='navbar-start gap-2'>
                     <button className="btn btn-lg">Inicio</button>
@@ -16,7 +16,7 @@ const inicio = () => {
                         <ul className="bg-base-100 rounded-t-none p-2 gap-1 shadow menu dropdown-content">
                             <li><a>todos</a></li>
                             <li><a>asia</a></li>
-                            <li><a>africa 2</a></li>
+                            <li><a>africa</a></li>
                             <li><a>america</a></li>
                             <li><a>europa</a></li>
                             <li><a>oceania</a></li>
@@ -25,7 +25,7 @@ const inicio = () => {
                 </div>
                 <div className="flex gap-2">
                     <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
-                    <button className="btn btn-outline btn-success">Success</button>
+                    <button className="btn btn-outline btn-success">buscar</button>
                 </div>
             </div>
         </>

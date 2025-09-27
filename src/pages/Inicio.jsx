@@ -18,14 +18,19 @@ const inicio = () => {
 
     return (
         <>
-            {paises.map(country => (
-                
-                <Card
-                    nombre={country.name.common}
-                    bandera={country.flags.png}
-                    alt={country.flags.alt}
-                />
-            ))}
+
+            <div className="grid grid-cols-5 grid-rows-5 gap-4">
+                {paises.map(country => (
+
+                    <Card
+                        nombre={country.name.common}
+                        bandera={country.flags.png}
+                        alt={country.flags.alt}
+                    />
+                ))}
+            </div>
+
+
         </>
     )
 }
