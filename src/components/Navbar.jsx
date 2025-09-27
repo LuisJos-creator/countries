@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const inicio = () => {
     return (
@@ -8,8 +9,8 @@ const inicio = () => {
                     <img src="https://profWilliamArte.github.io/reactpaisescompext/assets/logo4-BSAxrvBB.jpg" className="w-200 h-50 p-5" />
                 </div>
                 <div className='navbar-start gap-2'>
-                    <button className="btn btn-lg">Inicio</button>
-                    <button className="btn btn-lg">tabla</button>
+                    <Link to="/" className='btn btn-lg'>inicio</Link>
+                    <Link to="/tablas" className='btn btn-lg'>tablas</Link>
                     <button className="btn btn-lg">idioma</button>
                     <details>
                         <summary className="btn btn-lg">continentes</summary>

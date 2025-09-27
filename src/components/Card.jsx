@@ -1,6 +1,8 @@
 import React from 'react'
+import Modal from '../components/Modal'
 
-const card = ({ nombre, bandera, alt }) => {
+
+const card = ({ nombre, bandera, alt, capital, region, subregion, poblacion }) => {
 
     return (
         <>
@@ -14,7 +16,14 @@ const card = ({ nombre, bandera, alt }) => {
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{nombre}</h2>
                     <div className="card-actions">
-                        <button className="btn btn-outline btn-success">modal</button>
+                        <Modal
+                        id={nombre}
+                        capital={capital}
+                        region={region}
+                        subregion={subregion}
+                        poblacion={poblacion}
+                        
+                        />
                         <button className="btn btn-outline btn-error">detalle</button>
                     </div>
                 </div>

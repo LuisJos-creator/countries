@@ -1,6 +1,6 @@
-import Card from '../components/card'
-import Hero from '../components/hero'
 import React, { useEffect, useState } from 'react';
+import Card from '../components/card'
+import modal from '../components/Modal';
 
 const inicio = () => {
     const [paises, setPaises] = useState([])
@@ -18,7 +18,6 @@ const inicio = () => {
 
     return (
         <>
-
             <div className="grid grid-cols-5 grid-rows-5 gap-4">
                 {paises.map(country => (
 
@@ -26,6 +25,10 @@ const inicio = () => {
                         nombre={country.name.common}
                         bandera={country.flags.png}
                         alt={country.flags.alt}
+                        capital={country.capital}
+                        region={country.region}
+                        subregion={country.subregion}
+                        poblacion={country.population}
                     />
                 ))}
             </div>
