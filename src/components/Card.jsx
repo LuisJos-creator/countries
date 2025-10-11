@@ -1,8 +1,18 @@
 import React from 'react'
 import Modal from '../components/Modal'
+import { Link } from 'react-router-dom'
 
 
-const card = ({ nombre, bandera, alt, capital, region, subregion, poblacion }) => {
+const Card = ({ nombre, bandera, alt, capital, region, subregion, poblacion }) => {
+
+    // Codificar los parámetros para la URL
+    const encodedNombre = encodeURIComponent(nombre);
+    const encodedBandera = encodeURIComponent(bandera);
+    const encodedAlt = encodeURIComponent(alt);
+    const encodedCapital = encodeURIComponent(capital);
+    const encodedRegion = encodeURIComponent(region);
+    const encodedSubregion = encodeURIComponent(subregion);
+    const encodedPoblacion = encodeURIComponent(poblacion);
 
     return (
         <>
@@ -22,9 +32,8 @@ const card = ({ nombre, bandera, alt, capital, region, subregion, poblacion }) =
                         region={region}
                         subregion={subregion}
                         poblacion={poblacion}
-                        
                         />
-                        <button className="btn btn-outline btn-error">detalle</button>
+                        <Link to={`/countries/${encodedNombre}/${encodedBandera}/${encodedAlt}/${encodedCapital}/${encodedRegion}/${encodedSubregion}/${encodedPoblacion}`} className="btn btn-outline btn-error">Detalle</Link>
                     </div>
                 </div>
             </div>
@@ -32,4 +41,4 @@ const card = ({ nombre, bandera, alt, capital, region, subregion, poblacion }) =
     )
 }
 
-export default card
+export default Card

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const tablas = () => {
+const Tablas = () => {
   return (
     <>
     <h1>hola</h1>
@@ -8,4 +8,4 @@ const tablas = () => {
   )
 }
 
-export default tablas
+export default Tablas

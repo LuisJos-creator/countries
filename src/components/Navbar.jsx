@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const inicio = () => {
+const Navbar = () => {
     return (
         <>
             <div className="navbar bg-base-100 shadow-sm">
@@ -33,4 +33,4 @@ const inicio = () => {
     )
 }
 
-export default inicio
+export default Navbar

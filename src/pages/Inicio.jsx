@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Card from '../components/card'
-import modal from '../components/Modal';
+import Card from '../components/Card';
+import Modal from '../components/Modal';
 
-const inicio = () => {
+const Inicio = () => {
     const [paises, setPaises] = useState([])
     const API = 'https://restcountries.com/v3.1/all?fields=name,flags,capital,region,subregion,population'
 
@@ -20,7 +20,6 @@ const inicio = () => {
         <>
             <div className="grid grid-cols-5 grid-rows-5 gap-4">
                 {paises.map(country => (
-
                     <Card
                         nombre={country.name.common}
                         bandera={country.flags.png}
@@ -32,10 +31,8 @@ const inicio = () => {
                     />
                 ))}
             </div>
-
-
         </>
     )
 }
 
-export default inicio
+export default Inicio
